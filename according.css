@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(64, 72, 175);
+    color: white;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+p{
+    border: 2px solid rgb(150, 8, 8);
+    display: none;
+    padding: 20px;
+    margin: 10px;
+}
+
+.span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+#minus{
+    display: none;
+}

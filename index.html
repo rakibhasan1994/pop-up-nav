@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav var</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-icon md:hidden" id="menu-icon">
+                <img src="Images/menu-open.svg" id="menu-open" alt="">
+                <img src="Images/menu-close.svg" id="menu-close" alt="">
+            </div>
+            <div class="menu" id="menu">
+                <nav class="md:flex justify-center gap-[40px]">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Contact</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const menuIcon = document.getElementById("menu-icon");
+        const menu = document.getElementById("menu");
+        const menuOpen = document.getElementById("menu-open");
+        const menuClose = document.getElementById("menu-close");
+        
+
+        menuOpen.addEventListener("click",()=>{
+            menuOpen.style.display="none"
+            menuClose.style.display="block"
+           menu.style.display="block";
+        })
+        menuClose.addEventListener("click",()=>{
+            menuOpen.style.display="block"
+            menuClose.style.display="none"
+           menu.style.display="none";
+        })
+    </script>
+</body>
+</html>

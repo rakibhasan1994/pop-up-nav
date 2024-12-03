@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>According</title>
+    <link rel="stylesheet" href="according.css">
+</head>
+<body>
+    <div class="heading">
+       <div class="span">
+        <h2>This is a Accordian</h2>
+        <span id="plus">+</span>
+        <span id="minus">-</span>
+       </div>
+        <p id="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam dicta illo natus sed dolores accusantium at fuga ipsum consectetur vel.</p>
+    </div>
+
+    <script>
+        const plus = document.getElementById("plus");
+        const minus = document.getElementById("minus");
+
+        plus.addEventListener("click",()=>{
+            paragraph.style.display="block";
+            plus.style.display="none";
+            minus.style.display="block";
+        })
+        minus.addEventListener("click",()=>{
+            paragraph.style.display="none";
+            minus.style.display="none";
+            plus.style.display="block";
+        })
+    </script>
+</body>
+</html>

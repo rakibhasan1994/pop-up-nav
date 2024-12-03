@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="btn" id="popup-btn">Open Pop-Up</button>
+    <div class="container" id="container">
+    <h1>This is Pop-Up</h1>
+    
+    </div>
+
+    <script>
+        const popUpBtn = document.getElementById("popup-btn");
+        const container = document.getElementById("container");
+
+        popUpBtn.addEventListener("click",()=> {
+            container.style.display = "flex";
+        })
+        container.addEventListener("click",()=> {
+            container.style.display = "none";
+        })
+    </script>
+</body>
+</html>
